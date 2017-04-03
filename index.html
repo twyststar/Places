@@ -9,5 +9,55 @@
     <title>Places</title>
   </head>
   <body>
+    <div class="container">
+    <h1>Make a list of places you'd like to see!</h1>
+<!--Input-->
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a place:</h2>
+          <form id="new-place">
+
+            <div class="form-group">
+              <label for="new-place-name">Place</label>
+              <input type="text" class="form-control" id="new-place-name">
+            </div>
+
+            <div class="form-group">
+              <label for="new-country-name">Country</label>
+              <input type="text" class="form-control" id="new-country-name">
+            </div>
+
+            <div class="form-group">
+              <label for="new-attraction">Attraction</label>
+              <input type="text" class="form-control" id="new-attraction">
+            </div>
+
+            <div class="form-group">
+              <label for="new-food">What to eat</label>
+              <input type="text" class="form-control" id="new-food">
+            </div>
+
+            <button type="submit" class="btn">Add</button>
+          </form>
+
+          <h2>Places:</h2>
+          <ul id="place">
+
+          </ul>
+        </div>
+<!--Results-->
+        <div class="col-md-6">
+          <div id="show-place">
+            <h2></h2>
+
+            <p>Place: <span class="place-name"></span></p>
+            <p>Country: <span class="country-name"></span></p>
+            <p>Attraction: <span class="new-attraction"></span></p>
+            <p>Food: <span class="new-food"></span></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
